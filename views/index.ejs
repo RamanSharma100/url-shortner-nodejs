@@ -10,6 +10,37 @@
 
   <div class="col-md-8 form mx-auto">
     <h1 class="text-center mb-5">URL SHORTNER</h1>
+    <% if(typeof errors != 'undefined'){%>
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+      <%= errors[0].msg%>
+      <button
+        type="button"
+        class="close"
+        data-dismiss="alert"
+        aria-label="Close"
+      >
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <%}%> <% if(typeof CUrl != 'undefined'){%>
+    <div
+      class="alert alert-success alert-dismissible fade show d-flex"
+      role="alert"
+    >
+      This is Your URL:-
+      <p class="text-dark font-weight-bolder">
+        <%= CUrl.currentUrl + CUrl.customUrl%>
+      </p>
+      <button
+        type="button"
+        class="close"
+        data-dismiss="alert"
+        aria-label="Close"
+      >
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <%}%>
     <form action="/" method="POST" class="form-check shadow p-4">
       <div class="form-group">
         <label for="Url">Enter Your Url</label>
@@ -38,7 +69,7 @@
       <div class="form-group">
         <button
           type="submit"
-          class="btn text-white font-weight-bolder btn-block"
+          class="btn text-white font-weight-bolder btn-dark btn-block"
         >
           Short Url
         </button>
