@@ -1,3 +1,48 @@
-<h1>
-    welcome to url shortner
-</h1>
+<div class="col-md-12 home">
+  <nav class="navbar shadow navbar-expand-lg py-3 fixed-top navbar-dark">
+    <div class="container">
+      <a href="/" class="navbar-brand font-weight-bold">Url Shortner</a>
+      <div>
+        <a href="/" class="btn btn-outline-light px-5 ml-auto">Admin</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="col-md-8 form mx-auto">
+    <h1 class="text-center mb-5">URL SHORTNER</h1>
+    <form action="/" method="POST" class="form-check shadow p-4">
+      <div class="form-group">
+        <label for="Url">Enter Your Url</label>
+        <input
+          type="url"
+          name="mainUrl"
+          class="form-control border-bottom border-left-0 border-top-0 border-right-0 border-secondary"
+          placeholder="Enter Url"
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="shortUrl">Enter custom url name</label>
+        <div class="form-group border-0 border-bottom d-flex">
+          <input type="hidden" name="currentUrl" value="<%= currentUrl %>" />
+          <p class="mt-2 pl-2"><%= currentUrl %></p>
+          <input
+            type="text"
+            name="customUrl"
+            class="ml-2 form-control border-bottom border-left-0 border-top-0 border-right-0 border-secondary"
+            placeholder="Enter short url custom name"
+          />
+        </div>
+      </div>
+
+      <div class="form-group">
+        <button
+          type="submit"
+          class="btn text-white font-weight-bolder btn-block"
+        >
+          Short Url
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
