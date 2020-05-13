@@ -8,7 +8,7 @@ i used <b>local mongodb sever</b> and database name is <b>my_portfolio</b>
 simply download this file the do the following commands in cmd or terminal:-
 
 ```js
-npm install <br/>
+npm install
 npm run start:dev
 ```
 
