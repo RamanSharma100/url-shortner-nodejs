@@ -1,16 +1,16 @@
 # url-shortner-nodejs
 
-This id the url shortner project made with nodejs and ejs and mondodb
+This id the <b>url shortner project</b> made with <b?nodejs</b> and <b>ejs</b> and <b>mondodb</b>
 
-i used local mongodb sever and database name is my_portfolio
+i used <b>local mongodb sever</b> and database name is <b>my_portfolio</b>
 
 
 simply download this file the do the following commands in cmd or terminal:-
 
-<div>
+<div style="width:100%;color:#fff;background:#444;">
 npm install <br/>
 npm run start:dev
  </div>
 
 
-this project is free to use
+<b>this project is free to use</b>
