@@ -22,14 +22,15 @@
         <span aria-hidden="true">&times;</span>
       </button>
     </div>
-    <%}%> <% if(typeof CUrl != 'undefined'){%>
+    <%}%> <% if(typeof currentUrl!= 'undefined' && typeof customUrl !=
+    'undefined'){%>
     <div
       class="alert alert-success alert-dismissible fade show d-flex"
       role="alert"
     >
       This is Your URL:-
       <p class="text-dark font-weight-bolder">
-        <%= CUrl.currentUrl + CUrl.customUrl%>
+        <%= currentUrl + customUrl%>
       </p>
       <button
         type="button"

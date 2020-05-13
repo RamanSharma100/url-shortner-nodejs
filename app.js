@@ -41,7 +41,7 @@ app.post('/', async (req, res) => {
   if (!mainUrl || !currentUrl || !customUrl) {
     errors.push({ msg: 'please fill in all fields' });
   }
-  if (CUrlCount > 1) {
+  if (CUrlCount > 0) {
     errors.push({ msg: 'this url custom name is already registered' });
   }
   if (errors.length > 0) {
@@ -56,10 +56,10 @@ app.post('/', async (req, res) => {
     });
 
     URL.save();
-    const CUrl = await URLS.findOne({ customUrl: customUrl });
 
     res.render('index', {
-      CUrl,
+      currentUrl,
+      customUrl,
     });
   }
 });
