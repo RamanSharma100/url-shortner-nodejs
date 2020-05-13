@@ -12,5 +12,10 @@ npm install <br/>
 npm run start:dev
 </div>
 
+<div class="bg-gray">
+  .text-gray-dark on .bg-gray
+</div>
+
+
 
 <b>this project is free to use</b>
