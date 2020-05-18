@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
-const url = 'mongodb://localhost:27017/my_portfolio';
+const url =
+  'mongodb+srv://ramansharma:Krantivir100@cluster0-hicpo.mongodb.net/my_portfolio?retryWrites=true&w=majority';
 
 const connectDB = async () => {
   try {
